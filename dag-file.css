@@ -443,25 +443,19 @@ a {
     text-decoration: none;
 }
 
-
 .Fe-projects {
     margin: 50px;
     padding: 50px;
 }
 
-
 .Fe-head {
-=======
-
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
     align-items: center;
-
 }
-
 
 .Fe-head h4 {
     font-size: 22px;
@@ -471,7 +465,6 @@ a {
     min-width: 150px;
 }
 
-
 .Fe-head h2 {
     font-size: 32px;
     color: #555;
@@ -479,6 +472,7 @@ a {
     flex: 1;
     min-width: 150px;
 
+}
 
 .Fe-continer {
     display: flex;
@@ -494,12 +488,9 @@ a {
             white 30%);
 }
 
-.listing {
-    background-color:#eeeaec;
-    padding: 40px 20px;
-    background-repeat: no-repeat, no-repeat;
-    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
-    background-position: left bottom, right top;
+.Fe-img {
+
+    flex: 1;
     width: 100%;
 }
 
@@ -550,7 +541,63 @@ a {
 .Fe-projects .btn:hover {
     background-color: #A01A37;
 }
-=======
+
+
+
+.Fe-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 400px;
+}
+
+.Fe-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.Fe-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.Fe-text h2:hover {
+    color: #A01A37;
+}
+
+.Fe-text p {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+
+    padding-right: 1rem;
+    line-height: 2;
+
+    color: #d3d3d3;
+}
+.Fe-projects .btn{
+    background-color: #800c27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: auto;
+    height: max-content;
+}
+
+.Fe-projects .btn:hover {
+    background-color: #A01A37;
+}.listing {
+    background-color:#eeeaec;
+    padding: 40px 20px;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
+    background-position: left bottom, right top;
+    width: 100%;
+}
 .listing-head {
     display: flex;
     justify-content: space-between;
