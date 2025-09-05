@@ -443,25 +443,19 @@ a {
     text-decoration: none;
 }
 
-
 .Fe-projects {
     margin: 50px;
     padding: 50px;
 }
 
-
 .Fe-head {
-=======
-
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
     align-items: center;
-
 }
-
 
 .Fe-head h4 {
     font-size: 22px;
@@ -471,7 +465,6 @@ a {
     min-width: 150px;
 }
 
-
 .Fe-head h2 {
     font-size: 32px;
     color: #555;
@@ -479,6 +472,7 @@ a {
     flex: 1;
     min-width: 150px;
 
+}
 
 .Fe-continer {
     display: flex;
@@ -494,12 +488,9 @@ a {
             white 30%);
 }
 
-.listing {
-    background-color:#eeeaec;
-    padding: 40px 20px;
-    background-repeat: no-repeat, no-repeat;
-    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
-    background-position: left bottom, right top;
+.Fe-img {
+
+    flex: 1;
     width: 100%;
 }
 
@@ -535,7 +526,8 @@ a {
 
     color: #d3d3d3;
 }
-.Fe-projects .btn{
+
+.Fe-projects .btn {
     background-color: #800c27;
     color: white;
     padding: 10px 20px;
@@ -550,7 +542,18 @@ a {
 .Fe-projects .btn:hover {
     background-color: #A01A37;
 }
-=======
+
+
+.listing {
+    background-color: #eeeaec;
+    padding: 40px 20px;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
+    background-position: left bottom, right top;
+    width: 100%;
+}
+
+
 .listing-head {
     display: flex;
     justify-content: space-between;
@@ -574,7 +577,8 @@ a {
     justify-items: center;
 
 }
-.imgs{
+
+.imgs {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -583,20 +587,23 @@ a {
     height: auto;
     gap: 10px;
 }
-.imgs:hover{
+
+.imgs:hover {
     background-color: white;
 }
 
-.imgs img{
+.imgs img {
     width: auto;
     height: 100px;
 }
-.imgs h2{
+
+.imgs h2 {
     font-size: 16px;
     color: black;
     font-family: sans-serif;
 }
-.imgs h4{
+
+.imgs h4 {
     font-size: 14px;
     color: #696969;
     font-family: sans-serif;
@@ -611,4 +618,3 @@ a {
     min-width: 150px;
     font-weight: 900px;
 }
-
