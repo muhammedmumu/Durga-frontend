@@ -443,10 +443,12 @@ a {
     text-decoration: none;
 }
 
-.FEATURED {
+.Fe-projects {
+    margin: 50px;
+    padding: 50px;
 }
 
-.FEATURED-box {
+.Fe-head {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -455,7 +457,7 @@ a {
     align-items: center;
 }
 
-.FEATURED-box h4 {
+.Fe-head h4 {
     font-size: 22px;
     color: #800c27;
     text-align: center;
@@ -463,37 +465,79 @@ a {
     min-width: 150px;
 }
 
-.FEATURED-box {
+.Fe-head h2 {
     font-size: 32px;
     color: #555;
     text-align: center;
     flex: 1;
     min-width: 150px;
+
 }
 
-
-.featured-container {
+.Fe-continer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-     padding: 60px 50px;
-    margin: 100px;
-    background: linear-gradient(to right,
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to left,
             /* direction */
-            #f5f8fb 80%,
-            white 20%)
+            #f5f8f5 70%,
+            white 30%);
 }
 
-.FEATURED-img {
+.Fe-img {
+
     flex: 1;
     width: 100%;
 }
 
-.FEATURED-img img {
+.Fe-img img {
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
+    height: 400px;
+}
 
+.Fe-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.Fe-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.Fe-text h2:hover {
+    color: #A01A37;
+}
+
+.Fe-text p {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+
+    padding-right: 1rem;
+    line-height: 2;
+
+    color: #d3d3d3;
+}
+.Fe-projects .btn{
+    background-color: #800c27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: auto;
+    height: max-content;
+}
+
+.Fe-projects .btn:hover {
+    background-color: #A01A37;
 }
