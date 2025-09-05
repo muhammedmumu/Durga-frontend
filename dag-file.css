@@ -590,7 +590,61 @@ a {
 
 .Fe-projects .btn:hover {
     background-color: #A01A37;
-}.listing {
+}
+
+
+.Customer-Feedback {
+    min-height: 100vh;
+    margin: 50px;
+    padding: 50px;
+}
+
+.Feed-head {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.Feed-head h4 {
+    font-size: 22px;
+    color: #800c27;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.Feed-head h2 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.Feedback-vio {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+}
+
+.Feedback-vio img {
+    flex: 1;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    gap: 20px;
+    align-items: center;
+}
+.listing {
     background-color:#eeeaec;
     padding: 40px 20px;
     background-repeat: no-repeat, no-repeat;
