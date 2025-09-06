@@ -2,21 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'sans-serif';
     overflow-x: hidden;
 }
-h4{
-    font-size: 14px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+#h4 {
+    font-size: 22px;
+    color: #800c27;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    font-weight: 400;
 }
-h2{
-      font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  text-align: center;
 
+#h2 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    font-weight: 300;
 }
+
 
 .header-top {
     display: flex;
@@ -161,7 +167,6 @@ nav {
     padding-left: 60px;
 }
 
-/* Overlay box */
 .hero-overlay {
     background-color: rgba(255, 255, 255, 0.7);
     /* transparent white */
@@ -186,7 +191,6 @@ nav {
     color: #333;
     line-height: 1.5;
 }
-
 /* Button */
 .btn {
     background-color: #A01A37;
@@ -231,7 +235,6 @@ nav {
 
 .about-text h4 {
     color: #A01A37;
-    /* red small heading */
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -335,21 +338,6 @@ nav {
     align-items: center;
 }
 
-.properties-box h4 {
-    font-size: 22px;
-    color: #800c27;
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-}
-
-.properties-box h2 {
-    font-size: 32px;
-    color: #555;
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-}
 
 .properties-img {
     display: grid;
@@ -477,15 +465,6 @@ a {
     min-width: 150px;
 }
 
-.Fe-head h2 {
-    font-size: 32px;
-    color: #555;
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-
-}
-
 .Fe-continer {
     display: flex;
     align-items: center;
@@ -518,12 +497,6 @@ a {
     min-width: 300px;
 }
 
-.Fe-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #222;
-}
 
 .Fe-text h2:hover {
     color: #A01A37;
@@ -568,10 +541,7 @@ a {
 }
 
 .Fe-text h2 {
-    font-size: 32px;
-    font-weight: bold;
     margin-bottom: 20px;
-    color: #222;
 }
 
 .Fe-text h2:hover {
@@ -622,21 +592,7 @@ a {
 
 }
 
-.Feed-head h4 {
-    font-size: 22px;
-    color: #800c27;
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-}
 
-.Feed-head h2 {
-    font-size: 32px;
-    color: #555;
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-}
 
 .Feedback-vio {
     display: flex;
@@ -750,7 +706,6 @@ a {
 .right h2 {
     font-size: 32px;
     color:black;
-    
     flex: 1;
     min-width: 150px;
 }
@@ -765,16 +720,61 @@ a {
 justify-content: start;
 text-transform: capitalize;
 }
+.out{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
 .left  {
     align-items: center;
+
 }
-.left {
+.left h2{
     font-size: 40px;
+    color: black;
 }
 .people h4{
     color: #696969;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .updates{
      background-color: #eeeaec;
     padding: 40px 20px;
