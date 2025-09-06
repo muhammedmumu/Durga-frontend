@@ -5,16 +5,18 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-h4{
+
+h4 {
     font-size: 14px;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
-h2{
-      font-size: 32px;
+
+h2 {
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-  text-align: center;
+    text-align: center;
 
 }
 
@@ -148,29 +150,88 @@ nav {
     width: fit-content;
 }
 
-.hero {
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
     position: relative;
-    background-image: url('images/retouch_2025072920313554.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    /* keeps text on left */
-    padding-left: 60px;
+    margin: 0 auto;
 }
 
-/* Overlay box */
-.hero-overlay {
+.ad-container {
+    width: 100%;
+    max-height: 50rem;
+    display: flex;
+    animation: slide 16s infinite;
+    height: 100vh;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.ad-container div {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4 {
+    background: url(./images/retouch_2025072920313554.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
     background-color: rgba(255, 255, 255, 0.7);
-    /* transparent white */
+    position: relative;
     padding: 40px;
     max-width: 500px;
+    margin: 50px;
+    border-radius: 10px;
 }
 
 /* Heading */
-.hero-overlay h1 {
+.content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -180,7 +241,7 @@ nav {
 }
 
 /* Paragraph */
-.hero-overlay p {
+.content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
@@ -202,6 +263,7 @@ nav {
 .btn:hover {
     background-color: #800c27;
 }
+
 
 .about {
     padding: 60px 50px;
@@ -749,8 +811,8 @@ a {
 
 .right h2 {
     font-size: 32px;
-    color:black;
-    
+    color: black;
+
     flex: 1;
     min-width: 150px;
 }
@@ -761,44 +823,49 @@ a {
     flex-direction: column;
     width: 300px;
 }
-.right{
-justify-content: start;
-text-transform: capitalize;
+
+.right {
+    justify-content: start;
+    text-transform: capitalize;
 }
 
-.left  {
+.left {
     align-items: center;
 }
+
 .left {
     font-size: 40px;
 }
-.people h4{
+
+.people h4 {
     color: #696969;
 }
-.updates{
-     background-color: #eeeaec;
+
+.updates {
+    background-color: #eeeaec;
     padding: 40px 20px;
     background-repeat: no-repeat, no-repeat;
     background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
     background-position: left bottom, right top;
     width: 100%;
 }
-.what-head
-{
+
+.what-head {
     margin: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px;
 }
-.what-box
-{
+
+.what-box {
     margin: 50px;
     padding: 0 50px;
     display: flex;
     gap: 20px;
 }
-.boxl{
+
+.boxl {
     display: flex;
     padding: 50px 20px;
     width: 100%;
@@ -808,22 +875,27 @@ text-transform: capitalize;
 
     border-radius: 10px;
 }
-.btext{
+
+.btext {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
-    justify-content: center;}
-.updates img{
+    justify-content: center;
+}
+
+.updates img {
     width: 300px;
     height: 100px;
 }
-.blog{
+
+.blog {
     margin: 30px;
     padding: 60px;
 }
-.blog-box{
+
+.blog-box {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap:20px
+    gap: 20px
 }
