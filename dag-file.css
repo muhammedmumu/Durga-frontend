@@ -422,6 +422,7 @@ nav {
     padding: 20px 0;
 
 }
+
 .properties .btn {
     margin: 2rem auto;
     display: block;
@@ -710,7 +711,9 @@ a {
     animation: slide 16s infinite;
     gap: 20px;
 }
+
 @keyframes slide {
+
     0%,
     20% {
         transform: translateX(0%);
@@ -735,6 +738,7 @@ a {
         transform: translateX(-100%);
     }
 }
+
 .listing {
     background-color: #eeeaec;
     padding: 40px 20px;
@@ -767,6 +771,7 @@ a {
     justify-items: center;
 
 }
+
 .listing .btn {
     margin: 2rem auto;
     display: block;
@@ -806,10 +811,11 @@ a {
     font-weight: 200;
 }
 
-.love{
+.love {
     margin: auto;
     padding: 40px;
 }
+
 .people {
     display: flex;
     width: 90%;
@@ -846,13 +852,6 @@ a {
     text-transform: capitalize;
 }
 
-.left {
-    align-items: center;
-}
-
-.left {
-    font-size: 40px;
-}
 
 .people p {
     color: #666;
@@ -876,7 +875,7 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-  
+
 }
 
 .card {
@@ -955,9 +954,16 @@ a {
 }
 
 .updates {
+    background-color: #eeeaec;
+    padding: 40px 20px;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
+    background-position: left bottom, right top;
     min-height: 100vh;
     padding: 50px;
 }
+
+
 
 .what-head {
     margin: 0 50px;
