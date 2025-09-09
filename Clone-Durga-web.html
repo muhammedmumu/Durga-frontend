@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Daga Developers</title>
     <link rel="stylesheet" href="dag-file.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,57 +15,61 @@
 <body>
 
     <!-- Header Top Bar -->
-    <div class="header-top">
+    <header>
+        <div class="fixed
+        ">
+            <div class="header-top">
 
-        <div class="header-left">
-            <span>+91 72002 22263</span>
-            <span>+91 78882 2263</span>
-        </div>
-
-        <div class="header-right">
-            <div class="two">
-                <div class="whatsapp">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <div class="header-left">
                     <span>+91 72002 22263</span>
+                    <span>+91 78882 2263</span>
                 </div>
 
-                <div class="language">
-                    <select>
-                        <option>English</option>
-                        <option>Tamil</option>
-                        <option>Hindi</option>
-                    </select>
-                </div>
+                <div class="header-right">
 
-                <button class="signin-btn">
-                    <span>👤</span> SIGN IN
-                </button>
+                    <div class="whatsapp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                        <span>+91 72002 22263</span>
+                    </div>
+
+                    <div class="language">
+                        <select>
+                            <option>English</option>
+                            <option>Tamil</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+
+                    <button class="signin-btn">
+                        <span>👤</span> SIGN IN
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--nav section-->
+        <nav>
+            <div class="logo"><img src="./images/logo_nav.png" alt="logo"></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#plots">Plots</a>
+                <a href="#professionals">Professionals +</a>
+                <a href="https://www.dagadevelopers.com/buy-properties">Buy Property</a>
+                <a href="#https://www.dagadevelopers.com/sell-properties">Sell Property</a>
+                <a href="#https://www.dagadevelopers.com/blog">Blog</a>
+                <button class="btn"> Contact us</button>
 
-    <nav>
-        <div class="logo"><img src="./images/logo_nav.png" alt="logo"></div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Plots</a>
-            <a href="#">Professionals</a>
-            <a href="#">Buy Property</a>
-            <a href="#">Sell Property</a>
-            <a href="#">Blog</a>
-        </div>
-        </div>
 
-    </nav>
+            </div>
+
+
+
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <!-- Hero Section -->
-
-    <section class="Hero">
+    <section class="Hero" id="home">
         <div class="carousel-container">
             <div class="ad-container">
                 <div class="bg1">
@@ -100,13 +105,9 @@
             </div>
         </div>
     </section>
-
-
-
-
     <!-- About Section -->
     <!-- About Section -->
-    <section class="about">
+    <section class="about common " id="about">
         <div class="about-container">
             <div class="about-text">
                 <h4>About</h4>
@@ -119,7 +120,7 @@
                     unmatched business networks serve to create a loyal association of trust
                     and understanding.
                 </p>
-                <a href="#" class="read-more">Read More ➞</a>
+                <a href="https://www.dagadevelopers.com/about" class="read-more">Read More ➞</a>
             </div>
             <div class="about-image">
                 <img src="images/home.jpg" alt="House Image">
@@ -127,7 +128,7 @@
         </div>
     </section>
     <!-- Plots Section -->
-    <section class="plots">
+    <section class="plots " id="plots">
         <div class="plots-box">
             <div class="years"><label for="years">Years</label>
                 <h2>32</h2>
@@ -157,13 +158,22 @@
                     </label>
                     <p>Olaipaddi (Villupuram High Way )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
             <div class="img-1">
@@ -172,13 +182,22 @@
                     <label for="">KUNAL GARDEN ( UPCOMING PROJECT ) : குணால் கார்டன்</label>
                     <p>ASWANAGASURANAI ( Bangalore N H )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -190,13 +209,22 @@
                     <label for="">SWARNA BOOMI : SWARNABOOMI ELITE</label>
                     <p>Near Ramanasharam</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -207,14 +235,23 @@
                     <label for="">VISHAL GARDEN : விஷால் கார்டன்</label>
                     <p>Olaipaddi (Villupuram High Way )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
             <div class="img-1">
@@ -223,13 +260,22 @@
                     <label for="">DAGA GREENS ( UPCOMING PROJECT ) : டாகா கிரீன்ஸ்</label>
                     <p>Gengampattu ( Kanji Main Road )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -240,13 +286,22 @@
                     <label for="">NANDHI GARDEN : நந்தி கார்டன்</label>
                     <p>Kilpenathur (Chennai High Way)</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
         </div>
@@ -254,23 +309,48 @@
 
     </section>
     <!-- Our Services Section -->
-    <section class="ourservices">
-        <div class="ourservices-box">
-            <div class="ourservices-flex"></div>
+    <section class="ourservices common">
+        <div class="our-head">
+            <h4 id="h4">Our Services</h4>
+            <h2 id="h2">Looking to Buy a new property or Sell an existing one?</h2>
+        </div>
+        <div class="our-box common">
+            <div class="slider">
+                <div class="imge">
+                    <img href="#Head" src="./images/appartment.png" alt="">
+                    <p>Apartment</p>
+                </div>
+                <div class="imge"><img href="#Head" src="./images/construction.png" alt="">
+                    <p>Construction Reference </p>
+                </div>
+                <div class="imge"><img href="#Head" src="./images/documentation.png" alt="">
+                    <p> Documentation service </p>
+                </div>
+                <div class="imge"><img href="#Head" src="./images/interiordesign.png" alt="">
+                    <p> Interior design reference </p>
+                </div>
+                <div class="imge"><img href="#Head" src="./images/legalopinion.png" alt="">
+                    <p>Legal Opinion </p>
+                </div>
+                <div class="imge"><img href="#Head" src="./images/registration.png" alt="">
+                    <p>Registration</p>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="Fe-projects">
-        <div class="Fe-head">
+    <section class="Feat-projects ">
+        <div class="Feat-head">
             <h4 id="h4">Featured Projects</h4>
             <h2 id="h2">Check Out Our Featured Projects</h2>
         </div>
-        <div class="Fe-continer">
-            <div class="Fe-img">
+        <div class="Feat-container">
+            <div class="Feat-img">
                 <img src="./images/grid-1.jpg" alt="">
             </div>
-            <div class="Fe-text">
+            <div class="Feat-text">
                 <h2>About Daga Developers</h2>
                 <p>
                     We fulfill your dream of owning a home by providing the right plot for you.
@@ -286,7 +366,7 @@
 
     </section>
     <!-- Customer Feedback Section -->
-    <section class="Customer-Feedback">
+    <section class="Customer-Feedback common">
         <div class="Feedback">
             <div class="Feed-head">
                 <h4 id="h4">Feedback</h4>
@@ -300,8 +380,7 @@
                         <img src="images/yt3.jpg" alt="">
                         <img src="images/yt4.jpg" alt="">
                         <img src="images/yt5.jpg" alt="">
-                        <img src="images/yt6.jpg" alt="">
-                        <img src="images/yt7.jpg" alt="">
+
                     </div>
                 </div>
             </div>
@@ -309,8 +388,7 @@
     </section>
 
     <!-- Listing Section -->
-
-    <section class="listing">
+    <section class="listing common">
         <div class="listing-head">
             <h2 id="h2">We have the most listings and constant updates.<br>
                 So you’ll never miss out.</h2>
@@ -337,8 +415,9 @@
         </div>
         <button class="btn" href="#">Enquire More</button>
     </section>
+
     <!-- Love of People Section -->
-    <section class="love">
+    <section class="love common">
         <div class="people">
             <div class="right">
                 <h2>Why do people love us</h2>
@@ -373,10 +452,9 @@
 
     </section>
 
-
     <!-- What You Know Section -->
-    <section class="updates">
-        <div class="what-head">
+    <section class="updates common">
+        <div class="what-head   ">
             <h2 id="h2">We at Daga developers provide plots at lowest price in the market so that you can make the best
                 decision
                 for yourself and your family</h2>
@@ -406,47 +484,121 @@
     </section>
 
     <!-- Blog News Section -->
-    <section class="blog">
+    <section class="blog  common">
         <div class="blog-box">
-            <div class="news">
-                <h2>25+ YEARS OF "EXPERIENCE"</h2>
-                <h4>
-                    Over the 2 decades, Trust and Transparency is what makes us people’s favorite real estate
-                    organization in Tiruvannamalai.</h4>
+            <div class="blog-head">
+                <h4>BLOGS & NEWS</h4>
+                <h2>Interesting Articles Updated Daily</h2>
+
+                <div class="blog-mesg">
+                    <p>Tamil Nadu Land Records Made Easy: Patta Chitta & UDR Patta Online Explained</p>
+
+                    <p>Find Your Retreat Near Arunachala Hill with Prime Tiruvannamalai Highway Plots at Aishwarya
+                        Garden</p>
+                    <p>Swarnabhoomi: Build Your Spiritual Dream Home with Premium Plots in Tiruvannamalai</p>
+                    <p>First-Time Property Investment? Read This Before Your Tiruvannamalai Land Investment Begins</p>
+                    <p>How to View FMB Sketch Tamil Nadu Online – A Must-Know for Landowners & Plot Buyers</p>
+                </div>
+                <button class="btn">View More Blogs</button>
+            </div>
+
+            <div class="baner1">
+                <img src="./images/blog1.png" alt="">
+                <div class="baner1-text">
+                    <p>Aug 28,2025</p>
+                    <h2>Tamil Nadu Plot Owners: Don’t Miss the DTCP Regularisation Window – Secure DTCP Approval Tamil
+                        Nadu
+                        Now!</h2>
+                    <p>DTCP approval Tamil Nadu is the golden key to turning your unapproved plot into a fully legal,
+                        valuable asset. If you bought land before 20th October</p>
+                </div>
+                <button class="btn">View Details</button>
             </div>
             <div class="baner1">
-                <h2>25+ YEARS OF "EXPERIENCE"</h2>
-                <h4>
-                    Over the 2 decades, Trust and Transparency is what makes us people’s favorite real estate
-                    organization in Tiruvannamalai.</h4>
-            </div>
-            <div class="baner2">
-                <h2>25+ YEARS OF "EXPERIENCE"</h2>
-                <h4>
-                    Over the 2 decades, Trust and Transparency is what makes us people’s favorite real estate
-                    organization in Tiruvannamalai.</h4>
+                <img src="./images/blog2.png" alt="">
+                <div class="baner1-text">
+                    <p>Aug 28,2025</p>
+                    <h2>Unlocking the Mysteries of Land Measurement: A Simple Guide to Understanding Square Yards,
+                        Acres, and Hectares</h2>
+                    <p>Get ready for a weekend of pure joy and excitement! The Daga Developers Carnival Party is rolling
+                        into Tiruvannamalai this September, bringing two unforgettable days of fun, learning, and
+                        community engagement.</p>
+                </div>
+                <button class="btn">View Details</button>
             </div>
         </div>
     </section>
 
     <!-- Subscribe Section -->
-    <section class="subscribe">
+    <section class="subscribe common">
         <div class="subscribe-box">
-            <div class="subscribe-text"></div>
-            <div class="subscribe-img">
-                <img src="images/retouch_2025072920313554.jpg" alt="">
+            <h2 id="h2">Subscribe to our newsletter</h2>
+            <div class="subscribe-text">
+                <input type="text" name="Name" placeholder="Name">
+                <input type="text" name="Email" id="" placeholder="Email">
+                <button class="btn">Subscribe</button>
             </div>
+
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="footer-box">
-            <div class="footer-text"></div>
-            <div class="footer-img">
-                <img src="images/retouch_2025072920313554.jpg" alt="">
+            <div class="footer-card1">
+                <img src="./images/logo_trans.png" alt="">
+                <p>
+                    We have been into the business for more than 20 years since our incorporation into this business we
+                    have emerged as the leading real estate and most trusted company in Thiruvannamalai.
+                </p>
+                <div class="social">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="LinkedIn">
+                </div>
+            </div>
+            <div class="footer-card2 ">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Buy Property</a></li>
+                    <li><a href="#">Sell Property</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-card3">
+                <h2>Ongoing Projects</h2>
+                <ul>
+                    <li><a href="#">Vishal Garden</a></li>
+                    <li><a href="#">Kunal Garden</a></li>
+                    <li><a href="#">Vishal Garden Ii & Iii ( Upcoming Project )</a></li>
+                    <li><a href="#">Kunal Garden ( Upcoming Project )</a></li>
+                    <li><a href="#">Velan Nagar</a></li>
+                    <li><a href="#">Swarna Boomi</a></li>
+                    <li><a href="#">Vishal Garden</a></li>
+                </ul>
+            </div>
+            <div class="footer-card4">
+                <h2>Contact Us</h2>
+                <p>Mon – Sat: 8.00am 6.00pm</p>
+                <p>76 -THIRUMANGANA GOPURAM STREET, SH6, Pavazhakundur Tiruvannamalai – 606601.</p>
+                <p>info@dagadevelopers.com</p>
+                <p>+91 72002 22263 +91 7888222263</p>
             </div>
         </div>
+        <div class="terms">
+            <div class="tem">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="rights">
+                <p>© 2024 Daga Developers. All Rights Reserved.</p>
+            </div>
+        </div>
+
     </footer>
 </body>
 
