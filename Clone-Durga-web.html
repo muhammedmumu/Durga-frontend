@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Daga Developers</title>
     <link rel="stylesheet" href="dag-file.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +15,18 @@
 <body>
 
     <!-- Header Top Bar -->
- <header>  
-        <div class="header-top">
+    <header>
+        <div class="fixed
+        ">
+            <div class="header-top">
 
-            <div class="header-left">
-                <span>+91 72002 22263</span>
-                <span>+91 78882 2263</span>
-            </div>
+                <div class="header-left">
+                    <span>+91 72002 22263</span>
+                    <span>+91 78882 2263</span>
+                </div>
 
-            <div class="header-right">
-                <div class="two">
+                <div class="header-right">
+
                     <div class="whatsapp">
                         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
                         <span>+91 72002 22263</span>
@@ -44,27 +47,29 @@
             </div>
         </div>
 
-
-
-        <!--nav section-->
         <nav>
             <div class="logo"><img src="./images/logo_nav.png" alt="logo"></div>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Plots</a>
-                <a href="#">Professionals</a>
-                <a href="#">Buy Property</a>
-                <a href="#">Sell Property</a>
-                <a href="#">Blog</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#plots">Plots</a>
+                <a href="#professionals">Professionals +</a>
+                <a href="https://www.dagadevelopers.com/buy-properties">Buy Property</a>
+                <a href="#https://www.dagadevelopers.com/sell-properties">Sell Property</a>
+                <a href="#https://www.dagadevelopers.com/blog">Blog</a>
+                <button class="btn"> Contact us</button>
+
+
             </div>
-            </div>
+
+
 
         </nav>
     </header>
+
     <!-- Hero Section -->
     <!-- Hero Section -->
-    <section class="Hero" id="Head">
+    <section class="Hero" id="home">
         <div class="carousel-container">
             <div class="ad-container">
                 <div class="bg1">
@@ -102,7 +107,7 @@
     </section>
     <!-- About Section -->
     <!-- About Section -->
-    <section class="about common">
+    <section class="about common " id="about">
         <div class="about-container">
             <div class="about-text">
                 <h4>About</h4>
@@ -115,7 +120,7 @@
                     unmatched business networks serve to create a loyal association of trust
                     and understanding.
                 </p>
-                <a href="#" class="read-more">Read More ➞</a>
+                <a href="https://www.dagadevelopers.com/about" class="read-more">Read More ➞</a>
             </div>
             <div class="about-image">
                 <img src="images/home.jpg" alt="House Image">
@@ -123,7 +128,7 @@
         </div>
     </section>
     <!-- Plots Section -->
-    <section class="plots common">
+    <section class="plots " id="plots">
         <div class="plots-box">
             <div class="years"><label for="years">Years</label>
                 <h2>32</h2>
@@ -140,7 +145,7 @@
         </div>
     </section>
     <!-- Properties Section -->
-    <section class="properties common">
+    <section class="properties">
         <div class="properties-box">
             <h4 id="h4">Properties</h4>
             <h2 id="h2">Ongoing Projects</h2>
@@ -153,13 +158,22 @@
                     </label>
                     <p>Olaipaddi (Villupuram High Way )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
             <div class="img-1">
@@ -168,13 +182,22 @@
                     <label for="">KUNAL GARDEN ( UPCOMING PROJECT ) : குணால் கார்டன்</label>
                     <p>ASWANAGASURANAI ( Bangalore N H )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -186,13 +209,22 @@
                     <label for="">SWARNA BOOMI : SWARNABOOMI ELITE</label>
                     <p>Near Ramanasharam</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -203,14 +235,23 @@
                     <label for="">VISHAL GARDEN : விஷால் கார்டன்</label>
                     <p>Olaipaddi (Villupuram High Way )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
             <div class="img-1">
@@ -219,13 +260,22 @@
                     <label for="">DAGA GREENS ( UPCOMING PROJECT ) : டாகா கிரீன்ஸ்</label>
                     <p>Gengampattu ( Kanji Main Road )</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
 
@@ -236,13 +286,22 @@
                     <label for="">NANDHI GARDEN : நந்தி கார்டன்</label>
                     <p>Kilpenathur (Chennai High Way)</p>
                     <div class="detai">
-                        <p>498 Plots</p>
-                        <p>481 Avilable</p>
-                        <p>13 Sold</p>
+                        <div class="pots">
+                            <img src="./images/available.png" alt="">
+                            <p>498 Plots</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/plots.png" alt="">
+                            <p>481 Avilable</p>
+                        </div>
+                        <div class="pots">
+                            <img src="./images/sold.png" alt="">
+                            <p>13 Sold</p>
+                        </div>
                     </div>
                 </div>
                 <div class="view">
-                    <h5>View Detail</h5>
+                    <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"><h5>View Details </h5></a>
                 </div>
             </div>
         </div>
@@ -262,7 +321,8 @@
                     <p>Apartment</p>
                 </div>
                 <div class="imge"><img href="#Head" src="./images/construction.png" alt="">
-                <p>Construction Reference </p></div>
+                    <p>Construction Reference </p>
+                </div>
                 <div class="imge"><img href="#Head" src="./images/documentation.png" alt="">
                     <p> Documentation service </p>
                 </div>
@@ -275,13 +335,13 @@
                 <div class="imge"><img href="#Head" src="./images/registration.png" alt="">
                     <p>Registration</p>
                 </div>
-                </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="Feat-projects common">
+    <section class="Feat-projects ">
         <div class="Feat-head">
             <h4 id="h4">Featured Projects</h4>
             <h2 id="h2">Check Out Our Featured Projects</h2>
