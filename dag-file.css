@@ -31,6 +31,8 @@
     justify-content: space-evenly;
 }
 
+/* Head starts section  */
+
 .header-top {
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +41,6 @@
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
     overflow: hidden;
-    width: 100%;
 }
 
 /* Left side */
@@ -50,9 +51,9 @@
     justify-content: space-evenly;
     height: 50px;
     color: #fff;
-
     clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
-    width: 100%;
+    width: 60%;
+
 }
 
 
@@ -114,7 +115,9 @@
 .signin-btn span {
     margin-right: 5px;
 }
+/* end section */
 
+/* nav section */
 
 nav {
 
@@ -124,7 +127,7 @@ nav {
     justify-content: space-around;
     height: fit-content;
     align-items: center;
-    position: relative;
+   
 }
 
 .logo {
@@ -157,7 +160,9 @@ nav {
     padding: 5px;
     width: fit-content;
 }
+/* end section */
 
+/* hero section */
 .carousel-container {
     width: 100%;
     overflow: hidden;
@@ -246,7 +251,7 @@ nav {
 
 }
 
-/* Heading */
+/* Heading of hero section */
 #th {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -256,7 +261,7 @@ nav {
     /* dark red like screenshot */
 }
 
-/* Paragraph */
+/* Paragraph   of hero section */
 #tp {
     font-size: 1rem;
     margin-bottom: 20px;
@@ -264,7 +269,7 @@ nav {
     line-height: 1.5;
 }
 
-/* Button */
+/* Button of hero section */
 .btn {
     background-color: #A01A37;
     color: white;
@@ -281,7 +286,8 @@ nav {
 .btn:hover {
     background-color: #800c27;
 }
-
+/* end section */
+/* about section */
 
 .about {
     padding: 60px 50px;
@@ -359,7 +365,8 @@ nav {
     object-fit: cover;
 
 }
-
+/* endsection */
+/* plots section */
 .plots {
     width: 100%;
     height: auto;
@@ -399,6 +406,9 @@ nav {
     display: grid;
     justify-items: center;
 }
+/* end section */
+
+/* properties section */
 
 .properties {
     min-height: 100vh;
@@ -516,7 +526,9 @@ nav {
 a {
     text-decoration: none;
 }
+ /* end section */
 
+/* out services section */
 .ourservices {
     min-height: 100vh;
 }
@@ -585,6 +597,9 @@ a {
     margin-bottom: 10px;
 }
 
+/* end section */
+
+ /* featured section */
 .Feat-projects {
     margin: 50px;
     padding: 50px;
@@ -675,7 +690,9 @@ a {
 .Feat-projects .btn:hover {
     background-color: #A01A37;
 }
+/* end section */
 
+/* feedback section */
 
 .Customer-Feedback {
     min-height: 100vh;
@@ -751,7 +768,10 @@ a {
         transform: translateX(-100%);
     }
 }
+ /* end section */
 
+
+/* listing section  */
 .listing {
     background-color: #eeeaec;
     padding: 40px 20px;
@@ -823,7 +843,9 @@ a {
     font-family: sans-serif;
     font-weight: 200;
 }
+/* end section  */
 
+/* love section */
 .love {
     margin: auto;
     padding: 40px;
@@ -930,6 +952,8 @@ a {
     animation-delay: 9s;
 }
 
+
+
 @keyframes carousel {
     0% {
         transform: translateY(100%)scale(0.5);
@@ -965,7 +989,10 @@ a {
         visibility: hidden;
     }
 }
+/* end section */
 
+
+/* updates section */
 .updates {
     background-color: #eeeaec;
     padding: 40px 20px;
@@ -1041,8 +1068,10 @@ a {
     color: #696969;
     font-weight: 200;
 }
+/* end section */ 
 
-.blog {
+/* blog section */
+ .blog {
     margin: 40px;
     padding: 60px;
 }
@@ -1071,7 +1100,6 @@ a {
 
 .blog-head h4 {
     color: #A01A37;
-    /* red small heading */
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1117,7 +1145,8 @@ a {
 
 .baner1-text {
     padding: 10px 0;
-}
+} 
+/* end section */
 
 /*subscribe section*/
 .subscribe {
