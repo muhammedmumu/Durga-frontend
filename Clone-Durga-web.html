@@ -49,7 +49,15 @@
 
         <nav>
             <div class="logo"><img src="./images/logo_nav.png" alt="logo"></div>
-            <div class="nav-links">
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#plots">Plots</a>
@@ -58,12 +66,7 @@
                 <a href="#https://www.dagadevelopers.com/sell-properties">Sell Property</a>
                 <a href="#https://www.dagadevelopers.com/blog">Blog</a>
                 <button class="btn"> Contact us</button>
-
-
             </div>
-
-
-
         </nav>
     </header>
 
@@ -600,6 +603,57 @@
         </div>
 
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.getElementById('navLinks');
+            
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('mobile-menu');
+            navLinks.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.getElementById('navLinks');
+                
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('mobile-menu', 'active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.getElementById('navLinks');
+            const nav = document.querySelector('nav');
+            
+            if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('mobile-menu', 'active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 767) {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.getElementById('navLinks');
+                
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('mobile-menu', 'active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
 </body>
 
 </html>
