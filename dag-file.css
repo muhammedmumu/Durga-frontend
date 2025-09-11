@@ -901,7 +901,6 @@ a {
 
 /* listing section  */
 .listing {
-    background-color: #eeeaec;
     padding: 40px 20px;
     background-repeat: no-repeat, no-repeat;
     background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
@@ -936,6 +935,10 @@ a {
     align-items: center;
     justify-items: center;
 
+}
+listing-img:hover {
+    background-color: white;
+    cursor: pointer;
 }
 
 .listing .btn {
@@ -1339,6 +1342,9 @@ a {
     width: 50%;
 
 }
+.btn{
+    margin: 20px  0 0;
+}
 
 /* subscribe over */
 
@@ -1510,7 +1516,7 @@ footer h2 {
 
     /* Navigation */
     nav {
-        margin: 0 20px;
+        margin: 50px 20px 0 20px;
         height: 80px;
         justify-content: space-between;
         align-items: center;
@@ -1555,7 +1561,7 @@ footer h2 {
 
     /* About section - Full background coverage */
     .about {
-        margin: 20px;
+        margin: 20px auto;
         padding: 40px 20px;
         background: #f5f8fb !important;
         /* Full background color */
@@ -1581,8 +1587,10 @@ footer h2 {
 
     /* Featured projects - Even background */
     .Feat-projects {
-        margin: 20px;
+        margin:  20px auto;
         padding: 40px 20px;
+        background: #f5f8fb !important;
+        width: 100%;
     }
 
     .Feat-container {
@@ -1590,30 +1598,61 @@ footer h2 {
         margin: 20px 0;
         padding: 30px 20px;
         background: #f5f8fb !important;
-        /* Even background color */
         border-radius: 10px;
     }
+ /* our seriveices  */
+    .ourservices {
+        margin: 20px auto;
+        padding: 20px ;
+    }
+.our-box {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0 20px;
+        width: 100%;
+    }
+    .imge p{
+        font-size: 12px;
+    }
+    /* coustomer feedback */
+    .Customer-Feedback{
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+
+
+
 
     /* Listing section - Fix overflow, flex column */
     .listing {
-        padding: 40px 20px;
+        padding:  20px;
     }
+.listing-mid{
+    margin: auto;
+    width: 100%;
 
+}
     .listing-imgs {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
         align-items: center;
+        width: 100%;
+  
     }
 
     .imgs {
         width: 100%;
         max-width: 400px;
-        padding: 25px;
+
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 20px;
         background: white;
         border-radius: 10px;
@@ -1626,11 +1665,21 @@ footer h2 {
     }
 
     /* Love section - Flex column */
+    .love{
+        display: flex;
+        flex-direction: column;
+    }
     .people {
         flex-direction: column;
         height: auto;
         padding: 30px 20px;
         gap: 30px;
+        width: 100%;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .testimonials-section {
@@ -1639,6 +1688,8 @@ footer h2 {
         padding-left: 0;
         padding-top: 30px;
         height: 250px;
+        display:column;
+        flex:1;
     }
 
     /* Updates section */
@@ -1671,13 +1722,21 @@ footer h2 {
 
     /* Blog section */
     .blog {
-        margin: 20px;
-        padding: 40px 20px;
+        margin: 20px auto;
+        padding: 20px auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .blog-box {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 20px;
+    }
+    .blog-head,
+    .baner1,.baner1-text{
+        width: 100%;
+        height: max-content;
     }
 
     /* Footer - Fix social media icons */
