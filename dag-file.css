@@ -1771,7 +1771,30 @@ footer h2 {
 
     .plots-box {
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        display: flex;
+        margin: auto;
+        padding: auto;
     }
+.wrap{
+    margin: auto;
+    width: 100%;
+}
+.listing-mid{
+    margin: auto;
+    width: 100%;
+}
+.what-box{
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+}
+.what-box, .boxl img,.boxl{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    
+}
 }
 
 @media (max-width: 768px) {
