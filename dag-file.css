@@ -392,7 +392,7 @@ nav {
 
 .about {
     padding: 60px 50px;
-    margin: auto;
+    margin: 50px auto;
     background: linear-gradient(to right,
             #f5f8fb 80%,
             white 20%);
@@ -1247,8 +1247,10 @@ a {
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
-    justify-content: center;
+    justify-content: normal;
+    width: auto;
 }
+
 
 .updates img {
     width: 300px;
@@ -2090,7 +2092,7 @@ footer h2 {
 
     .people {
         flex-direction: column;
-        height: auto;
+        height: 150vh;
         padding: 30px 20px;
         gap: 30px;
         width: 100%;
@@ -2700,7 +2702,7 @@ footer h2 {
         padding: 25px 15px;
         margin: 15px auto !important;
         width: 100% !important;
-        height: auto;
+        height: 100vh !important;
         max-width: 100% !important;
         background: white;
         border-radius: 10px;
@@ -2776,7 +2778,7 @@ footer h2 {
         padding: 25px 15px;
         margin: 15px auto;
         width: 95%;
-        height: auto;
+        height: 50vh;
     }
 
     .right h2 {
@@ -2930,13 +2932,17 @@ footer h2 {
         padding: 30px 15px;
     }
 
+    .blog-mesg {
+        margin: auto;
+    }
+
     .blog-box {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .blog-head {
-        text-align: center;
+
         margin: 15px;
     }
 
