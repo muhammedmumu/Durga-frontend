@@ -312,22 +312,22 @@
 }
 
 .bg1 {
-    background-image: url(./images/slide4.jpeg);
+    background-image: url(/images/slide4.jpeg);
     height: 100vh;
 }
 
 .bg2 {
-    background-image: url(./images/slide1.jpeg);
+    background-image: url(/images/slide1.jpeg);
     height: 100vh;
 }
 
 .bg3 {
-    background-image: url(./images/slide3.jpg);
+    background-image: url(/images/slide3.jpg);
     height: 100vh;
 }
 
 .bg4 {
-    background-image: url(./images/slite.jpg);
+    background-image: url(/images/slite.jpg);
     height: 100vh;
 }
 
@@ -957,7 +957,7 @@ a {
     padding: 40px 20px;
     background-color: #eeeaec;
     background-repeat: no-repeat, no-repeat;
-    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
+    background-image: url(/images/pattern-03.png), url(/images/pattern-04.png);
     background-position: left bottom, right top;
     width: 100%;
     margin: 0 auto;
@@ -1198,7 +1198,7 @@ a {
     background-color: #eeeaec;
     padding: 40px 20px;
     background-repeat: no-repeat, no-repeat;
-    background-image: url(./images/pattern-03.png), url(./images/pattern-04.png);
+    background-image: url(/images/pattern-03.png), url(/images/pattern-04.png);
     background-position: left bottom, right top;
     min-height: 100vh;
     padding: 0 50px;
