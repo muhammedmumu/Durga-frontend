@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Daga Developers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#A01A37',
+                        'primary-dark': '#9d1b31',
+                    },
+                    animation: {
+                        'slide': 'slide 16s infinite',
+                    },
+                    keyframes: {
+                        slide: {
+                            '0%, 20%': { transform: 'translateX(0%)' },
+                            '25%, 45%': { transform: 'translateX(-25%)' },
+                            '50%, 70%': { transform: 'translateX(-50%)' },
+                            '75%, 95%': { transform: 'translateX(-75%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        .clip-header-left {
+            clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+        }
+
+        .clip-header-right {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 100vw;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 font-poppins max-w-full overflow-x-hidden">
+
+    <!-- Header Top Bar -->
+    <header>
+        <div class="fixed top-0 inset-x-0 z-10">
+            <div class="flex justify-evenly items-center bg-white py-1 border-b border-gray-300 overflow-hidden">
+                <div class="flex items-center bg-white py-1 border-b border-gray-300 w-full max-w-full">
+                    <!-- Header Left -->
+                    <div
+                        class="bg-primary-dark flex items-center justify-evenly text-white w-[60%] h-[50px] clip-header-left">
+                        <div class="mr-4 text-lg">
+                            <span class="mr-4 text-sm sm:text-base">+91 72002 22263</span>
+                            <span class="text-sm sm:text-base">+91 78882 2263</span>
+                        </div>
+                    </div>
+                    <!-- Header Right -->
+                    <div class="flex items-center justify-evenly bg-[#e8e8e8] w-full h-[50px] clip-header-right">
+                        <div class="flex items-center gap-1 text-lg sm:text-xl text-primary-dark">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                                class="w-4 h-4 sm:w-5 sm:h-5" alt="WhatsApp">
+                            <span class="text-sm sm:text-base">+91 72002 22263</span>
+                        </div>
+
+                        <div>
+                            <select
+                                class="px-1 py-1 text-xs sm:px-1.5 sm:py-1 border border-gray-300 rounded sm:text-sm">
+                                <option>English</option>
+                                <option>Tamil</option>
+                                <option>Hindi</option>
+                            </select>
+                        </div>
+
+                        <button
+                            class="bg-primary-dark text-white border-none px-2 py-1 sm:px-3 sm:py-1.5 rounded cursor-pointer text-xs sm:text-sm h-max">
+                            <span class="mr-1">👤</span> SIGN IN
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="mt-12 h-20 sm:h-32 flex justify-around items-center w-full max-w-full px-4">
+                <div class="w-24 sm:w-40 ">
+                    <img src="./images/logo_nav.png" alt="logo" class="w-full h-auto max-w-full">
+                </div>
+
+                <div
+                    class="hidden lg:grid lg:grid-cols-8 lg:gap-5 lg:ml-12 lg:items-center lg:justify-evenly lg:text-sm max-w-full">
+                    <a href="#home"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Home</a>
+                    <a href="#about"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">About</a>
+                    <a href="#plots"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Plots</a>
+                    <a href="#professionals"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Professionals
+                        +</a>
+                    <a href="https://www.dagadevelopers.com/buy-properties"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Buy
+                        Property</a>
+                    <a href="#https://www.dagadevelopers.com/sell-properties"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Sell
+                        Property</a>
+                    <a href="#https://www.dagadevelopers.com/blog"
+                        class="relative text-sm lg:text-base font-normal no-underline text-black p-1 w-fit hover:cursor-pointer hover:underline hover:decoration-2 hover:decoration-primary">Blog</a>
+                    <button
+                        class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">Contact
+                        us</button>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="lg:hidden flex flex-col cursor-pointer p-2.5 z-[1001]">
+                <span class="w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300"></span>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full max-w-full overflow-hidden relative carousel-container" id="home">
+        <div class="w-[400%] max-h-[50rem] flex animate-slide h-screen max-w-none">
+            <!-- Slide 1 -->
+            <div class="w-1/4 h-screen bg-cover bg-center bg-no-repeat relative flex-shrink-0"
+                style="background-image: url('./images/slide1.jpeg');">
+                <div
+                    class="mx-5 my-5 p-5 max-w-[90%] bg-white bg-opacity-80 rounded-lg backdrop-blur-sm absolute top-1/2 left-5 transform -translate-y-1/2">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 text-gray-800">
+                        <span>Daga Developers</span>
+                    </h1>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg mb-5 text-gray-600">Explore all our projects
+                        and find your dream property today!</p>
+                    <button
+                        class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">View
+                        Projects</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="w-1/4 h-screen bg-cover bg-center bg-no-repeat relative flex-shrink-0"
+                style="background-image: url('./images/slide3.jpg');">
+                <div
+                    class="mx-5 my-5 p-5 max-w-[90%] bg-white bg-opacity-80 rounded-lg backdrop-blur-sm absolute top-1/2 left-5 transform -translate-y-1/2">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 text-gray-800">
+                        Karthigai deepam dates</h1>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg mb-5 text-gray-600">Tiruvannamalai</p>
+                    <button
+                        class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">Know
+                        More</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-1/4 h-screen bg-cover bg-center bg-no-repeat relative flex-shrink-0"
+                style="background-image: url('./images/slide4.jpeg');">
+                <div
+                    class="mx-5 my-5 p-5 max-w-[90%] bg-white bg-opacity-80 rounded-lg backdrop-blur-sm absolute top-1/2 left-5 transform -translate-y-1/2">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 text-gray-800">
+                        <span>Finding plots made easy</span>
+                    </h1>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg mb-5 text-gray-600">Explore our projects to
+                        find the right plot for you</p>
+                    <button
+                        class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">View
+                        Projects</button>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="w-1/4 h-screen bg-cover bg-center bg-no-repeat relative flex-shrink-0"
+                style="background-image: url('./images/slite.jpg');">
+                <div
+                    class="mx-5 my-5 p-5 max-w-[90%] bg-white bg-opacity-80 rounded-lg backdrop-blur-sm absolute top-1/2 left-5 transform -translate-y-1/2">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 text-gray-800">
+                        <span>Your Dream Home</span>
+                    </h1>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg mb-5 text-gray-600">We are there to help you
+                        select the right place to build your dream home now</p>
+                    <button
+                        class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">Contact
+                        us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+        class="flex flex-col items-center justify-evenly bg-[#f5f8fb] mx-auto my-5 p-5 sm:p-10 rounded-lg max-w-full"
+        id="about">
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-25 max-w-6xl w-full px-4">
+            <div class="flex-1 order-2 lg:order-1">
+                <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">About</h4>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-5 text-center lg:text-left font-normal">About Daga
+                    Developers</h2>
+                <p class="text-sm sm:text-base lg:text-lg leading-relaxed text-justify mb-5">
+                    We fulfill your dream of owning a home by providing the right plot for you.
+                    The customer feedback and trust we have is our strength. Our experienced
+                    team will help you from start to finish of the registration process. We
+                    take pride in forging ourselves in boundless personal connections and
+                    unmatched business networks serve to create a loyal association of trust
+                    and understanding.
+                </p>
+                <a href="https://www.dagadevelopers.com/about" class="text-primary font-medium hover:underline">Read
+                    More ➞</a>
+            </div>
+            <div class="flex-1 order-1 lg:order-2">
+                <img src="images/home.jpg" alt="House Image" class="w-full h-auto rounded-lg max-w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Plots Section -->
+    <section>
+        <div class="flex flex-col items-center justify-evenly py-8 sm:py-16 px-5 max-w-full" id="plots">
+            <div
+                class="flex flex-col sm:flex-row lg:flex-row items-center text-center gap-4 sm:gap-8 lg:gap-16 p-5 lg:p-10 max-w-full flex-wrap">
+                <div class="flex flex-col items-center min-w-0">
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-primary mb-2">32</h2>
+                    <label class="text-sm sm:text-lg font-medium text-gray-600">Years</label>
+                </div>
+                <div class="flex flex-col items-center min-w-0">
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-primary mb-2">128</h2>
+                    <label class="text-sm sm:text-lg font-medium text-gray-600">Sold Plots</label>
+                </div>
+                <div class="flex flex-col items-center min-w-0">
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-primary mb-2">200</h2>
+                    <label class="text-sm sm:text-lg font-medium text-gray-600">Total Plots</label>
+                </div>
+                <div class="flex flex-col items-center min-w-0">
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-primary mb-2">150</h2>
+                    <label class="text-sm sm:text-lg font-medium text-gray-600">Happy Customers</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="flex flex-col items-center justify-evenly py-8 sm:py-16 px-5 max-w-full">
+        <div class="text-center mb-10 px-4">
+            <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">Properties</h4>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-5 font-normal">Ongoing Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl w-full mb-10 px-4">
+            <!-- Property 1 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-1.jpg" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">VISHAL GARDEN
+                        II & III ( UPCOMING PROJECT ) : விஷால் கார்டன் II & III</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">Olaipaddi (Villupuram High Way )</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-2.jpg" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">KUNAL GARDEN
+                        ( UPCOMING PROJECT ) : குணால் கார்டன்</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">ASWANAGASURANAI ( Bangalore N H )</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-3.webp" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">SWARNA BOOMI
+                        : SWARNABOOMI ELITE</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">Near Ramanasharam</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 4 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-4.jpeg" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">VISHAL GARDEN
+                        : விஷால் கார்டன்</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">Olaipaddi (Villupuram High Way )</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 5 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-5.jpg" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">DAGA GREENS (
+                        UPCOMING PROJECT ) : டாகா கிரீன்ஸ்</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">Gengampattu ( Kanji Main Road )</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 6 -->
+            <div
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-full">
+                <img src="./images/grid-6.jpeg" alt="" class="w-full h-48 object-cover">
+                <div class="p-4 sm:p-5">
+                    <label class="text-sm sm:text-lg font-semibold text-gray-800 mb-2 block leading-tight">NANDHI GARDEN
+                        : நந்தி கார்டன்</label>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">Kilpenathur (Chennai High Way)</p>
+                    <div class="flex justify-between items-center text-xs sm:text-sm text-gray-600 mb-4 gap-1">
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/available.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">498 Plots</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/plots.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">481 Available</p>
+                        </div>
+                        <div class="flex items-center gap-1 flex-col sm:flex-row">
+                            <img src="./images/sold.png" alt="" class="w-3 h-3 sm:w-4 sm:h-4">
+                            <p class="text-xs">13 Sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-primary text-white text-center py-2 rounded hover:bg-primary-dark transition-colors cursor-pointer">
+                        <a href="https://www.dagadevelopers.com/project/vishal-garden-vishal-garden-CG"
+                            class="text-white no-underline">
+                            <h5 class="text-sm">View Details</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center px-4">
+            <button
+                class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">View
+                More</button>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="flex flex-col items-center justify-evenly py-8 sm:py-16 px-5 max-w-full">
+        <div class="text-center mb-10 px-4">
+            <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">Our Services</h4>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-5 font-normal">Looking to Buy a new property or Sell an
+                existing one?</h2>
+        </div>
+
+        <div class="flex flex-col items-center justify-evenly mx-auto my-5 p-5 max-w-full">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8 p-4 max-w-full">
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/appartment.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Apartment</p>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/construction.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Construction Reference</p>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/documentation.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Documentation service</p>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/interiordesign.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Interior design reference</p>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/legalopinion.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Legal Opinion</p>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center">
+                    <img src="./images/registration.png" alt=""
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 object-contain">
+                    <p class="text-xs sm:text-sm">Registration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="bg-[#f5f8fb] py-16 px-5">
+        <div class="text-center mb-10">
+            <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">Featured Projects</h4>
+            <h2 class="text-3xl font-bold mb-5 font-normal">Check Out Our Featured Projects</h2>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-25 max-w-6xl mx-auto bg-[#f5f8fb] p-8 rounded-lg mb-8">
+            <div class="flex-1 order-1">
+                <img src="./images/grid-1.jpg" alt="" class="w-full h-auto rounded-lg">
+            </div>
+            <div class="flex-1 order-2 text-center lg:text-left">
+                <h2 class="text-2xl lg:text-3xl font-semibold mb-4">About Daga Developers</h2>
+                <p class="text-base lg:text-lg leading-relaxed text-justify">
+                    We fulfill your dream of owning a home by providing the right plot for you.
+                    The customer feedback and trust we have is our strength. Our experienced
+                    team will help you from start to finish of the registration process. We
+                    take pride in forging ourselves in boundless personal connections and
+                    unmatched business networks serve to create a loyal association of trust
+                    and understanding.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button
+                class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">Enquire
+                Now</button>
+        </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section class="flex flex-col items-center justify-evenly py-16 px-5">
+        <div class="text-center mb-10">
+            <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">Feedback</h4>
+            <h2 class="text-3xl font-bold mb-5 font-normal">Customer Feedback</h2>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6 max-w-6xl w-full mx-auto mb-8">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 w-full">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/yt1.jpg" alt="" class="w-full h-32 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/yt2.jpg" alt="" class="w-full h-32 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/yt3.jpg" alt="" class="w-full h-32 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/yt4.jpg" alt="" class="w-full h-32 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/yt5.jpg" alt="" class="w-full h-32 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listing Section -->
+    <section class="flex flex-col items-center justify-evenly bg-[#eeeaec] py-16 px-5">
+        <div class="max-w-6xl w-full">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-5 font-normal">We have the most listings and constant updates.<br>
+                    So you'll never miss out.</h2>
+            </div>
+
+            <div class="mx-auto w-full">
+                <div class="flex flex-col lg:flex-row gap-6 items-center">
+                    <div
+                        class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <img src="./images/buyhome.png" alt="" class="w-20 h-20 mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Buy a New Home</h2>
+                        <h4 class="text-gray-600 text-sm">With our experts' advice, buying a home will become a hassle
+                            free process</h4>
+                    </div>
+                    <div
+                        class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <img src="./images/sellhome.png" alt="" class="w-20 h-20 mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Sell a Home</h2>
+                        <h4 class="text-gray-600 text-sm">With DAGA genuine customers get great value for your property
+                        </h4>
+                    </div>
+                    <div
+                        class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <img src="./images/buyland.png" alt="" class="w-20 h-20 mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Buy a land</h2>
+                        <h4 class="text-gray-600 text-sm">With all documents verified, buy a land with full trust and
+                            confidence</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button
+                    class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">Enquire
+                    Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love of People Section -->
+    <section class="py-16 px-5">
+        <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Why do people love us</h2>
+                <p class="text-lg leading-relaxed text-gray-600 mb-6">We value our customer feedback, And we believe
+                    listening our customers make us succeeded.</p>
+                <button
+                    class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">View
+                    All Reviews</button>
+            </div>
+
+            <div class="flex-1 border-t lg:border-t-0 lg:border-l border-gray-200 pt-6 lg:pt-0 lg:pl-8">
+                <div class="space-y-6 h-64 overflow-hidden">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold mb-2 text-center">John Doe</h3>
+                        <p class="text-gray-600 text-center text-sm">"Amazing service! The team was very professional
+                            and delivered exactly what I needed."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Know Section -->
+    <section class="flex flex-col items-center justify-evenly bg-[#eeeaec] py-16 px-5">
+        <div class="max-w-6xl w-full">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-5 font-normal">We at Daga developers provide plots at lowest price in
+                    the market so that you can make the best decision for yourself and your family</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 mb-8">
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6 bg-white p-6 rounded-lg">
+                    <img src="./images/buyhome.png" alt="" class="w-24 h-24 flex-shrink-0">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-3 text-center lg:text-left">DTCP Approved Plots</h2>
+                        <h4 class="text-gray-600 text-center lg:text-left">With proper documents, Daga provides hassle
+                            free legal transfer to our customers so they can focus on the construction rather than
+                            document clearance.</h4>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6 bg-white p-6 rounded-lg">
+                    <img src="./images/buyhome.png" alt="" class="w-24 h-24 flex-shrink-0">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-3 text-center lg:text-left">25+ YEARS OF "EXPERIENCE"</h2>
+                        <h4 class="text-gray-600 text-center lg:text-left">Over the 2 decades, Trust and Transparency is
+                            what makes us people's favorite real estate organization in Tiruvannamalai.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button
+                    class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog News Section -->
+    <section class="flex flex-col items-center justify-evenly py-16 px-5">
+        <div class="max-w-6xl w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <div class="text-center lg:text-left mb-8">
+                        <h4 class="text-xl mb-2.5 tracking-wide font-semibold text-primary">BLOGS & NEWS</h4>
+                        <h2 class="text-3xl font-bold mb-5 font-normal">Interesting Articles Updated Daily</h2>
+
+                        <div class="space-y-3 mb-6 text-sm lg:text-base">
+                            <p>Tamil Nadu Land Records Made Easy: Patta Chitta & UDR Patta Online Explained</p>
+                            <p>Find Your Retreat Near Arunachala Hill with Prime Tiruvannamalai Highway Plots at
+                                Aishwarya Garden</p>
+                            <p>Swarnabhoomi: Build Your Spiritual Dream Home with Premium Plots in Tiruvannamalai</p>
+                            <p>First-Time Property Investment? Read This Before Your Tiruvannamalai Land Investment
+                                Begins</p>
+                            <p>How to View FMB Sketch Tamil Nadu Online – A Must-Know for Landowners & Plot Buyers</p>
+                        </div>
+                        <button
+                            class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">View
+                            More Blogs</button>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./images/blog1.png" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">Aug 28,2025</p>
+                            <h2 class="text-lg font-semibold mb-3">Tamil Nadu Plot Owners: Don't Miss the DTCP
+                                Regularisation Window – Secure DTCP Approval Tamil Nadu Now!</h2>
+                            <p class="text-gray-600 text-sm mb-4">DTCP approval Tamil Nadu is the golden key to turning
+                                your unapproved plot into a fully legal, valuable asset. If you bought land before 20th
+                                October</p>
+                            <button
+                                class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">View
+                                Details</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./images/blog2.png" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">Aug 28,2025</p>
+                            <h2 class="text-lg font-semibold mb-3">Unlocking the Mysteries of Land Measurement: A Simple
+                                Guide to Understanding Square Yards, Acres, and Hectares</h2>
+                            <p class="text-gray-600 text-sm mb-4">Get ready for a weekend of pure joy and excitement!
+                                The Daga Developers Carnival Party is rolling into Tiruvannamalai this September,
+                                bringing two unforgettable days of fun, learning, and community engagement.</p>
+                            <button
+                                class="bg-primary text-white border-none rounded cursor-pointer px-4 py-2 text-sm hover:bg-primary-dark transition-all duration-300">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="flex flex-col items-center justify-evenly py-16 px-5">
+        <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl w-full">
+            <h2 class="text-3xl font-bold mb-8 text-center font-normal">Subscribe to our newsletter</h2>
+            <div class="flex flex-col lg:flex-row gap-4">
+                <input type="text" name="Name" placeholder="Name"
+                    class="flex-1 px-4 py-3 border border-gray-300 rounded text-base">
+                <input type="text" name="Email" placeholder="Email"
+                    class="flex-1 px-4 py-3 border border-gray-300 rounded text-base">
+                <button
+                    class="bg-primary text-white border-none rounded cursor-pointer px-6 py-3 text-base hover:bg-primary-dark transition-all duration-300">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-16 px-5">
+        <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto mb-8">
+            <div class="flex-1 text-center lg:text-left">
+                <img src="./images/logo_trans.png" alt="" class="w-48 mx-auto lg:mx-0 mb-4">
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    We have been into the business for more than 20 years since our incorporation into this business we
+                    have emerged as the leading real estate and most trusted company in Thiruvannamalai.
+                </p>
+                <div class="flex justify-center lg:justify-start gap-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"
+                        class="w-8 h-8 grayscale hover:grayscale-0 hover:scale-110 transition-all cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"
+                        class="w-8 h-8 grayscale hover:grayscale-0 hover:scale-110 transition-all cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                        class="w-8 h-8 grayscale hover:grayscale-0 hover:scale-110 transition-all cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="LinkedIn"
+                        class="w-8 h-8 grayscale hover:grayscale-0 hover:scale-110 transition-all cursor-pointer">
+                </div>
+            </div>
+
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-xl font-semibold mb-4">Useful Links</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">About</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Projects</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Construction</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Buy Property</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Sell Property</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-xl font-semibold mb-4">Ongoing Projects</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Vishal Garden</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Kunal Garden</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Vishal Garden Ii & Iii (
+                            Upcoming Project )</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Kunal Garden ( Upcoming
+                            Project )</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Velan Nagar</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Swarna Boomi</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-primary transition-colors">Vishal Garden</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+                <div class="space-y-2 text-gray-600">
+                    <p>Mon – Sat: 8.00am 6.00pm</p>
+                    <p>76 -THIRUMANGANA GOPURAM STREET, SH6, Pavazhakundur Tiruvannamalai – 606601.</p>
+                    <p>info@dagadevelopers.com</p>
+                    <p>+91 72002 22263 +91 7888222263</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-4 max-w-6xl mx-auto pt-8 border-t border-gray-300">
+            <div class="flex flex-col lg:flex-row gap-4 text-center lg:text-left">
+                <p class="text-gray-600">Terms of Service</p>
+                <p class="text-gray-600">Privacy Policy</p>
+            </div>
+            <div class="text-center lg:text-right">
+                <p class="text-gray-600">© 2024 Daga Developers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
