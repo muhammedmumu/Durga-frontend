@@ -408,17 +408,17 @@
 
     <!-- Featured Projects Section -->
     <section class="Feat-projects m-auto p-[50px] flex flex-col items-center w-4/5">
-        <div class="Feat-head">
+        <div class="Feat-head flex flex-col gap-5 items-center max-w-[500px]">
             <h4 id="h4">Featured Projects</h4>
             <h2 id="h2">Check Out Our Featured Projects</h2>
         </div>
-        <div class="Feat-container">
-            <div class="Feat-img">
-                <img src="/images/grid-1.jpg" alt="">
+        <div class="Feat-container flex items-center justify-between gap-10 my-10 flex-wrap bg-gradient-to-l from-[#f5f8fb] from-70% to-white to-30% ">
+            <div class="Feat-img flex-1 w-full p-12">
+                <img src="/images/grid-1.jpg"  class="object-cover w-full h-96" alt="">
             </div>
-            <div class="Feat-text">
-                <h2>About Daga Developers</h2>
-                <p>
+            <div class="Feat-text flex-1 w-full h-full p-12 hover:bg-primary  transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">About Daga Developers</h2>
+                <p class="mb-2 ml-0 pr-4 leading-8 text-[#555]">
                     We fulfill your dream of owning a home by providing the right plot for you.
                     The customer feedback and trust we have is our strength. Our experienced
                     team will help you from start to finish of the registration process. We
@@ -428,19 +428,19 @@
 
             </div>
         </div>
-        <button class="btn" href="https://www.dagadevelopers.com/projects">Enquire Now</button>
+        <button class="btn bg-[#800c27] text-white py-2.5 px-5 border-none rounded-[5px] cursor-pointer no-underline w-auto h-max hover:bg-[#A01A37]" href="https://www.dagadevelopers.com/projects">Enquire Now</button>
 
     </section>
     <!-- Customer Feedback Section -->
-    <section class="Customer-Feedback common">
-        <div class="Feedback">
-            <div class="Feed-head">
+    <section class="Customer-Feedback common h-auto m-auto p-[50px] w-4/5">
+        <div class="Feedback flex justify-between flex-col gap-5 flex-wrap items-center">
+            <div class="Feedback-head flex flex-col gap-5 items-center max-w-[500px]">
                 <h4 id="h4">Feedback</h4>
                 <h2 id="h2">Customer Feedback</h2>
             </div>
-            <div class="Feedback-vio">
-                <div class="fe-container">
-                    <div class="cards">
+            <div class="Feedback-vio flex justify-center items-center p-5 w-full h-auto">
+                <div class="fe-container my-12 flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory w-[650px]">
+                    <div class="cards"> 
                         <img src="/images/yt1.jpg" alt="">
                     </div>
                     <div class="cards">
@@ -462,43 +462,44 @@
     </section>
 
     <!-- Listing Section -->
-    <section class="listing common">
-        <div class="wrap">
-            <div class="listing-head">
+    <section class="listing common  py-[40px] px-[20px] bg-[#eeeaec] w-full mx-auto">
+        <div class="wrap w-4/5 m-auto ">
+            <div class="listing-head flex flex-col justify-between items-center gap-5 m-5">
                 <h2 id="h2">We have the most listings and constant updates.<br>
                     So you’ll never miss out.</h2>
             </div>
-            <div class="listing-mid">
-                <div class="listing-imgs">
-                    <div class="imgs">
+            <div class="listing-mid m-12 items-center ">
+                <div class="listing-imgs p-12 grid grid-cols-3  flex-wrap flex justify-center items-center hover:bg-white pointer ">
+                    <div class="imgs hover:bg-white flex flex-col items-center p-12 w-full h-auto gap-2.5">
                         <img src="/images/buyhome.png" alt="">
                         <h2>Buy a New Home </h2>
                         <h4>With our experts` advice, buying a home will becom a hassle free process</h4>
 
                     </div>
-                    <div class="imgs">
+                    <div class="imgs hover:bg-white flex flex-col items-center p-12 w-full h-auto gap-2.5">
                         <img src="/images/sellhome.png" alt="">
                         <h2>Sell a Home</h2>
                         <h4>With DAGA genuine customers get great value for your property</h4>
                     </div>
-                    <div class="imgs">
+                    <div class="imgs hover:bg-white flex flex-col items-center p-12 w-full h-auto gap-2.5">
                         <img src="/images/buyland.png" alt="">
                         <h2>Buy a land</h2>
                         <h4>With all documents verified, buy a land with full trust and confidence</h4>
                     </div>
                 </div>
             </div>
-            <button class="btn" href="#">Enquire NowMore</button>
+            <button class="btn block items-center my-8 mx-auto" href="#">Enquire NowMore</button>
         </div>
     </section>
 
     <!-- Love of People Section -->
-    <section class="love ">
-        <div class="people">
-            <div class="right">
-                <h2>Why do people love us</h2>
-                <p>We value our customer feedback, And we believe listening our customers make us succeeded.</p>
-                <button class="btn" href="https://www.dagadevelopers.com/testimonials">View All Reviews</button>
+    <section class="love  flex justify-center items-center my-24 mx-auto w-full mx-auto">
+        <div class="people flex w-full justify-between max-w-[1200px] bg-white overflow-hidden p-10 gap-[100px] my-[20px] mx-auto h-auto">
+
+            <div class=" right flex flex-col justify-start w-[35%] capitalize">
+                <h2 class="text-[#A01A37] text-[2.5rem] mb-5">Why do people love us</h2>
+                <p class="text-[#666] text-[1.1rem] leading-[1.6]">We value our customer feedback, And we believe listening our customers make us succeeded.</p>
+                <button class="btn mt-2.5" href="https://www.dagadevelopers.com/testimonials">View All Reviews</button>
             </div>
 
             <div class="testimonials-section">
@@ -532,26 +533,26 @@
 
     <!-- What You Know Section -->
     <section class="updates common">
-        <div class="wrap">
-            <div class="what-head   ">
+        <div class="wrap  w-4/5 m-auto">
+            <div class="what-head mx-4 sm:mx-8 md:mx-[150px] flex text-center items-center py-[100px] px-[50px]"  >
                 <h2 id="h2">We at Daga developers provide plots at lowest price in the market so that you can make the
                     best
                     decision
                     for yourself and your family</h2>
             </div>
 
-            <div class="what-box">
-                <div class="boxl">
-                    <img src="./images/buyhome.png" alt="">
-                    <div class="btext">
+            <div class=" what-box m-[50px] px-[50px] flex flex-row justify-between items-center gap-5">
+                <div class="boxl flex py-[50px] px-[20px] w-full h-max bg-white gap-5 rounded-[10px]">
+                    <img src="/images/buyhome.png" class ="w-[300px] h-[100px]" alt="">
+                    <div class="btext flex flex-col items-start text-start justify-start w-auto">
                         <h2>DTCP Approved Plots</h2>
                         <h4>With proper documents, Daga provides hassle free legal transfer to our customers so they can
                             focus on the construction rather than document clearance.</h4>
                     </div>
                 </div>
-
-                <div class="boxl">
-                    <img src="./images/buyhome.png" alt="">
+                
+                <div class="boxl flex py-[50px] px-[20px] w-full h-max bg-white gap-5 rounded-[10px]">
+                    <img src="/images/buyhome.png" class="w-[300px] h-[100px]" alt="">
                     <div class="btext">
                         <h2>25+ YEARS OF "EXPERIENCE"</h2>
                         <h4>
@@ -560,18 +561,18 @@
                     </div>
                 </div>
             </div>
-            <button class="btn">Explore</button>
+            <button class="btn block mx-auto my-8 text-center">Explore</button>
         </div>
     </section>
 
     <!-- Blog News Section -->
-    <section class="blog  common">
-        <div class="blog-box wrap">
-            <div class="blog-head">
+    <section class="blog  common m-10 p-14">
+        <div class="blog-box wrap grid grid-cols-3 gap-5 w-4/5 m-auto">
+            <div class="blog-head flex flex-col gap-5 items-start m-5">
                 <h4>BLOGS & NEWS</h4>
                 <h2>Interesting Articles Updated Daily</h2>
 
-                <div class="blog-mesg">
+                <div class="blog-mesg flex flex-col gap-[15px] m-5 justify-start">
                     <p>Tamil Nadu Land Records Made Easy: Patta Chitta & UDR Patta Online Explained</p>
 
                     <p>Find Your Retreat Near Arunachala Hill with Prime Tiruvannamalai Highway Plots at Aishwarya
@@ -585,7 +586,7 @@
 
             <div class="baner1">
                 <img src="/images/blog1.png" alt="">
-                <div class="baner1-text">
+                <div class="baner1-text py-2.5 px-0">
                     <p>Aug 28,2025</p>
                     <h2>Tamil Nadu Plot Owners: Don’t Miss the DTCP Regularisation Window – Secure DTCP Approval Tamil
                         Nadu
@@ -615,32 +616,33 @@
     </section>
 
     <!-- Subscribe Section -->
-    <section class="subscribe common">
-        <div class="subscribe-box">
+    <section class="subscribe common bg-[#f3f6fa] py-10 px-2.5 text-center mt-[50px]">
+        <div class="subscribe-box w-[70%] bg-white py-[40px] px-[20px] m-auto flex flex-col items-start">
             <h2 id="h2">Subscribe to our newsletter</h2>
-            <div class="subscribe-text">
-                <input type="text" name="Name" placeholder="Name">
-                <input type="text" name="Email" id="" placeholder="Email">
-                <button class="btn">Subscribe</button>
+            <div class="subscribe-text flex gap-5 flex-row items-center w-full">
+                <input class="p-2.5 bg-[#f3f6fa] rounded w-full max-w-[400px]" type="text" name="Name" placeholder="Name">
+                <input class="p-2.5 bg-[#f3f6fa] rounded w-full max-w-[400px]" type="text" name="Email" id="" placeholder="Email">
+                <button class="btn  my-5 mx-0 py-2.5 px-5 bg-[#A01A37] text-white border-0 rounded-[5px] cursor-pointer w-1/2">Subscribe</button>
             </div>
 
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="footer-box">
-            <div class="footer-card1">
-                <img src="/images/logo_trans.png" alt="">
+    <footer  class="bg-[#222] text-white py-10 px-5">
+<!-- ...footer content... -->
+        <div class="footer-box flex justify-between gap-5 px-4 sm:px-6 lg:px-[100px] border-b border-[#555] mx-4 sm:mx-6 lg:mx-[50px]">
+            <div class="footer-card1 flex flex-col gap-5 w-2/5">
+                <img src="/images/logo_trans.png" class="h-auto w-[300px]" alt="">
                 <p>
                     We have been into the business for more than 20 years since our incorporation into this business we
                     have emerged as the leading real estate and most trusted company in Thiruvannamalai.
                 </p>
-                <div class="social">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="LinkedIn">
+                <div class="social flex gap-5 my-2.5 mx-0  ">
+                    <img class="w-[30px] h-[30px] filter grayscale cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                    <img class="w-[30px] h-[30px] filter grayscale cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                    <img class="w-[30px] h-[30px] filter grayscale cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    <img class="w-[30px] h-[30px] filter grayscale cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="LinkedIn">
                 </div>
             </div>
             <div class="footer-card2 ">
@@ -666,7 +668,7 @@
                     <li><a href="#">Vishal Garden</a></li>
                 </ul>
             </div>
-            <div class="footer-card4">
+            <div class="footer-card4 text-sm leading-[1.8] text-[#ababab] list-none text-start cursor-pointer">
                 <h2>Contact Us</h2>
                 <p>Mon – Sat: 8.00am 6.00pm</p>
                 <p>76 -THIRUMANGANA GOPURAM STREET, SH6, Pavazhakundur Tiruvannamalai – 606601.</p>
@@ -674,12 +676,12 @@
                 <p>+91 72002 22263 +91 7888222263</p>
             </div>
         </div>
-        <div class="terms">
-            <div class="tem">
+        <div class="terms flex justify-between gap-5 mx-4 sm:mx-6 lg:mx-[50px]">
+            <div class="tem flex gap-5 float-right">
                 <p>Terms of Service</p>
                 <p>Privacy Policy</p>
             </div>
-            <div class="rights">
+            <div class="rights text-sm text-[#ababab] list-none text-start cursor-pointer">
                 <p>© 2024 Daga Developers. All Rights Reserved.</p>
             </div>
         </div>
