@@ -2452,8 +2452,8 @@ footer h2 {
 
     /* Nav */
     nav {
-        margin: 30px 15px 0 15px;
-        height: 70px;
+        margin:auto;
+        height: 70px !important;
     }
 
     .logo {
